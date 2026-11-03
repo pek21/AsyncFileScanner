@@ -2,4 +2,7 @@
 
 public sealed record ScanOptions(
     string DirectoryPath,
-    string[] Extensions);
+    string[] Extensions,
+    long MinSizeBytes,
+    long MaxSizeBytes,
+    int MaxConcurrency);
